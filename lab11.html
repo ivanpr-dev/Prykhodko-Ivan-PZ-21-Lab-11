@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>SVG Homework</title>
+  <style>
+    svg {
+      width: 200px;
+      height: 200px;
+      border: 2px solid #333;
+    }
+    circle {
+      fill: crimson;
+      transition: 0.3s;
+    }
+    rect {
+      fill: steelblue;
+      transition: 0.3s;
+    }
+    polygon {
+      fill: gold;
+      transition: 0.3s;
+    }
+    circle:hover {
+      fill: orange;
+      r: 60;
+    }
+    rect:hover {
+      fill: limegreen;
+    }
+    polygon:hover {
+      fill: purple;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <circle cx="60" cy="60" r="40" />
+    <rect x="110" y="1" width="60" height="60" />
+    <polygon points="100,150 40,190 160,190" />
+  </svg>
+</body>
+</html>
